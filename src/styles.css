@@ -1,0 +1,16 @@
+body {
+  background-color: #f5f5f56b;
+}
+body::-webkit-scrollbar {
+  width: 0.55rem;
+}
+body::-webkit-scrollbar-track {
+  background: #c1c1c1;
+}
+body::-webkit-scrollbar-thumb {
+  background: linear-gradient(#bf953f, #b38728, #aa771c);
+}
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}

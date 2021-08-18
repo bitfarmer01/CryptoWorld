@@ -1,0 +1,155 @@
+.home_container {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  height: 100vh;
+  line-height: 1.7;
+  color: #c1c1c17e;
+  padding: 30px;
+
+  box-sizing: border-box;
+}
+
+.home_header {
+  height: 95vh;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(245, 247, 250, 0.6),
+      rgba(184, 198, 219, 0.6)
+    ),
+    url("https://blogs.imf.org/wp-content/uploads/2018/03/BLOG-1024x600-cryto-currency-bitcoins-yesfoto-getty-images-iStock-886016628.jpg");
+  background-size: cover;
+  background-position: bottom;
+  position: relative;
+  clip-path: polygon(0 0, 100% 0%, 100% 75vh, 0 100%);
+}
+.header__logo-box {
+  position: absolute;
+  top: 0.1rem;
+  left: 0.1rem;
+  color: black;
+}
+.header__logo {
+  height: 7.5rem;
+}
+.header__logo:hover {
+  height: 8.5rem;
+}
+.header__text-box {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.heading-primary {
+  color: black;
+  text-transform: uppercase;
+  backface-visibility: hidden;
+  margin-bottom: 6rem;
+}
+.heading-primary--main {
+  display: block;
+  letter-spacing: 0.2rem;
+  font-size: 6rem;
+  font-weight: 400;
+  animation-name: MoveDown;
+  animation-duration: 0.8s;
+  animation-delay: 0.22s;
+}
+
+@keyframes MoveDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-10rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+@keyframes MoveUp {
+  0% {
+    opacity: 0;
+    transform: translateY(10rem);
+  }
+  70% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 0.8;
+    transform: translate(0);
+  }
+}
+.home_button:link,
+.home_button:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 1.5rem 4rem;
+  display: inline-block;
+  border-radius: 5rem;
+  transition: all 0.2s;
+  position: relative;
+  animation-name: MoveUp;
+  animation-duration: 0.8s;
+  animation-delay: 1.2s;
+  animation-fill-mode: backwards;
+}
+.home_button:hover {
+  transform: translateY(-0.3rem);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  font-family: Lato;
+  color: black;
+}
+.home_button:hover::after {
+  transform: scale(1.2);
+  opacity: 0;
+}
+.home_button:active {
+  transform: translateY(-0.2rem);
+}
+.button--white {
+  background-color: #fff;
+  font-family: Lato;
+  color: rgb(32, 32, 32);
+}
+.button--white::after {
+  background-color: #fff;
+}
+.home_button::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 5rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all 0.4s;
+}
+
+.home_link {
+  margin: 1rem;
+}
+.page_header {
+  background: linear-gradient(to right, #bf953f, #b38728, #aa771c);
+  height: 80px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+.page_header--logo {
+  color: #fff;
+  justify-self: center;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+}
